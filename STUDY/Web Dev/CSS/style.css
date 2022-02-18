@@ -1,0 +1,240 @@
+/** Selectores */
+
+/** Se pueden juntar varios selectores en una linea con una ,  */
+
+html,
+body {
+}
+/** Etiqueta */
+body {
+}
+
+/** Clases (class) */
+.class {
+}
+
+/** Id */
+#Id {
+}
+
+/** Todo */
+* {
+}
+
+/** Atributos */
+*[class="x"] {
+}
+
+/** Pseudo-Clases */
+*:hover {
+}
+
+/** Hijo */
+ul li {
+}
+
+/** Fin Selectores */
+
+/*! ------------------------------------------------------------------------------------------ */
+/*! ------------------------------------------------------------------------------------------ */
+/*! ------------------------------------------------------------------------------------------ */
+
+/** Pseudo-Clases */
+
+/**                 uso          */
+:hover             Global          /* Efecto cuando se pone el puntero encima */
+:link                a             /* Modificar link sin visitar */
+:visited             a             /* Modificar link visitado */
+:active              a             /* Modificar link activo */
+:nth-child(even)   table           /* Especifica las posiciones pares */
+:nth-child(odd)    table           /* Especifica las posiciones impares */
+
+/** Fin Pseudo-Clases */
+
+/** Cambiar Colores */
+
+/** Formas Elegir Colores */
+* {
+  color: white; /* Colocando el color */
+  color: #ffffff; /* Con Hexadecimal */
+  color: rgb(255, 255, 255); /* Con RGB(Red , Green, Blue) */
+  color: rgba(255, 255, 255, 1); /* Con RGBA(Red , Green, Blue, alpha) */
+}
+
+/** Formas para Cambiar Color */
+* {
+  background-color: white; /* Cambia el color de fondo */
+  color: white; /* Cambia el color del texto */
+}
+
+/** Fin Cambiar Colores */
+
+/** Unidades de Medida */
+* {
+  /** Absolutas */
+  margin: 5px; /* Pixeles relativo al dispositivo de visualización  */
+  margin: 5mm; /* Milimetros */
+  margin: 5cm; /* Centimetros */
+  margin: 5in; /* Pulgadas */
+
+  /** Relativas */
+  margin: 5em; /* Tamaño dado por font_size */
+  margin: 5rem; /* Tamaño dado por font_size del root */
+
+  /** Porcentaje */
+  margin: 5%; /* Se calcula segun el ancho del dispositivo de visualización */
+
+  /** auto */
+  margin: auto; /* Se rellenara con un valor apropiado automaticamente */
+}
+
+/** Fin Unidades de Medida */
+
+/** Sintaxis Generales */
+
+* {
+  /** padding - margin -  */
+
+  /** Lados */
+  margin: 1px; /* 4 lados */
+  margin: 1px 1px; /* Vertical | Horizontal */
+  margin: 1px 1px 1px; /* Top | Horizontal | bottom */
+  margin: 1px 1px 1px 1px; /* Top | right | bottom | left */
+
+  /** border -  */
+
+  /**    width style  color */
+  border: 1px solid black; /* Muestra una linea completa */
+  border: 1px dotted black; /* Muestra una linea de puntos */
+  border: 1px dashed black; /* Muestra una linea de guiones */
+  border: 1px double black; /* Muestra dos linea completas */
+  border: 1px inset black; /* Muestra una linea que pareciera hundida */
+  border: 1px outset black; /* Muestra una linea que pareciera levantado  */
+  border: 1px groove black; /* Muestra una linea que pareciera tallada */
+  border: 1px ridge black; /* Muestra una linea que pareciera bordeado */
+
+  /** Radius y Collapse */
+  border-radius: 1px; /* 4 lados */
+  border-radius: 1px 1px; /* Top-left-and-bottom-right | top-right-and-bottom-left */
+  border-radius: 1px 1px 1px; /* Top-left | top-right-and-bottom-left | bottom-right */
+  border-radius: 1px 1px 1px 1px; /* Top-left | top-right | bottom-right | bottom-left */
+  border-collapse: collapse; /* Junta los bordes de una tabla */
+  border-collapse: separate; /* Separa los bordes de una tabla */
+
+  /** Display y Position */
+  display: none; /* Vuelve invisible los elementos */
+  display: block; /* Coloca los elementos abajo de otro */
+  display: inline; /* coloca los elementos al lado */
+  position: static; /* No es afectado por las propiedades de top, right, bottom, left */
+  position: relative; /* Puede moverse libremente con las propiedades top, right, bottom, left */
+  position: absolute; /*  */
+  position: fixed; /* Coloca el contenido fijo en la pantalla */
+  position: sticky; /* Se mueve libremente hasta que topa con un borde opuesto */
+
+  /** Texto */
+
+  /** alineacion */
+  text-align: left; /* Coloca el texto a la izquierda */
+  text-align: center; /* Coloca el texto al centro */
+  text-align: right; /* Coloca el texto a la derecha */
+  text-align: justify; /* Se adapta segun la cantidad de texto */
+
+  /** Decoracion */
+  text-decoration: none; /* Quita todas las decoraciones */
+  text-decoration: overline; /* Coloca un subrayado encima */
+  text-decoration: line-through; /* Tacha el texto */
+  text-decoration: underline; /* Coloca un subrayado abajo */
+
+  /** Transformacion */
+  text-transform: uppercase; /* Texto en mayusculas */
+  text-transform: lowercase; /* Texto en minusculas */
+  text-transform: capitalize; /* Primera letra en mayuscula */
+
+  /** Varios */
+  text-indent: 1px; /* Coloca un identado */
+  letter-spacing: 1px; /* Hace una separacion entre las letras */
+  line-height: 1.5; /* Hace una separacion entre lineas */
+  word-spacing: 1px; /* Hace una separacion entre las palabras */
+  font-family: arial; /* Cambia el tipo de fuente */
+  font-size: 1px; /* Cambia el tamaño de la fuente */
+
+  /** Estilo Fuente */
+  font-style: normal; /* Fuente normal */
+  font-style: italic; /* Fuente cursiva */
+  font-style: oblique; /* Fuente oblicua */
+
+  /** Ancho Fuente */
+  font-weight: normal; /* Ancho normal fuente */
+  font-weight: bold; /* Ancho negrita fuente */
+  font-weight: 100 - 900; /* Ancho regulable entre 100 y 900 */
+
+  /** Shadow */
+
+  /**           X   Y  blur      color */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Coloca una sombreado al texto */
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Coloca un sombreado al box */
+
+  /** Listas y Tablas */
+  /** Abreviacion */
+  /*         type position image */
+  list-style: none inside url(); /* Junta todas las list en una */
+
+  /** Tipo */
+  list-style-image: url(); /* Coloca un punto personalizado */
+  list-style-type: none; /* Quita el punto */
+  list-style-type: disc; /* Coloca un disco. */
+  list-style-type: circle; /* Coloca un círculo */
+  list-style-type: square; /* Coloca un cuadrado */
+  list-style-type: decimal; /* Cambia a decimal desde 1 */
+  list-style-type: decimal-leading-zero; /* Cambia a decimal desde 0(01, 02, 03, etc) */
+  list-style-type: lower-roman; /* Coloca numeros en minuscula romanos(i, ii, iii, etc) */
+  list-style-type: upper-roman; /* Coloca numeros en mayuscula romanos(I, II, III, etc) */
+  list-style-type: lower-greek; /* Coloca letras en minúscula griegas(alfa/α, beta/β, gamma/γ, etc) */
+  list-style-type: lower-latin; /* Coloca letras ASCII en minúscula (a, b, c, etc) */
+  list-style-type: upper-latin; /* Coloca letras ASCII en mayúscula (A, B, C, etc) */
+  list-style-type: armenian; /* Coloca numeración armenia tradicional (ayb/ayp, ben/pen, gim/keem, etc) */
+  list-style-type: georgian; /* Coloca numeración georgiana tradicional (an, ban, gan, ..., he, tan, in, in-an, etc) */
+  list-style-type: lower-alpha; /* Es lo mismo que lower-latin */
+  list-style-type: upper-alpha; /* Es lo mismo que upper-latin */
+
+  /** Posicion */
+  list-style-position: inside; /*  */
+  list-style-position: outside; /*  */
+
+  /** Table **/
+
+  /** Fin Listas y Tablas */
+}
+/** Fin Sintaxis */
+
+/*! ------------------------------------------------------------------------------------------ */
+/*! ------------------------------------------------------------------------------------------ */
+/*! ------------------------------------------------------------------------------------------ */
+
+/** Model Box */
+
+* {
+  /** Dentro del Box */
+
+  padding: 0rem; /* Ancho dentro del box */
+
+  /** Limite Box */
+
+  border: 0rem; /* Limite entre el padding y el margin */
+
+  /** Ancho Box */
+
+  margin: 0rem; /* Ancho de fuera del box */
+
+  /** Area Contenido */
+  width: 1px; /* Ancho del contenido */
+  max-width: 1px; /* Limita el ancho del contenido */
+  height: 1px; /* Altura del contenido */
+  max-height: 1px; /* Limita la altura del contenido */
+}
+
+/** Fin Model Box */
+
+/** CSS Grid */
+
+/** Fin CSS Grid */
